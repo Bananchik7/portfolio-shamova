@@ -8,10 +8,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/personal.css" />
     <title>Дело жизни</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__conteiner">
         <div class="header__conteiner-menu">
           <div class="header__menu-logo">
@@ -19,17 +21,26 @@
           </div>
           <ul class="header__menu-row">
             <li class="header__row">
-              <div class="header__row-home">Главная</div>
+              <a href="#header" class="header__row-home">Главная</a>
             </li>
             <li class="header__row">
-              <div class="header__row-about">О нас</div>
+              <a href="#info" class="header__row-about">О нас</a>
             </li>
-            <li class="header__row">
-              <div class="header__row-help">Помощь</div>
-            </li>
-            <li class="header__row">
-              <div class="header__row-city">Cанкт-Петербург</div>
-            </li>
+            <div class="header__dropdown">
+              <button class="header__row-help">Помощь</button>
+              <div class="header__help-dropdown">
+                <a href="#service">Услуги</a>
+                <a href="#details">Обратная связь</a>
+              </div>
+            </div>
+            <div class="header__dropdown">
+              <button class="header__row-city">Cанкт-Петербург</button>
+              <div class="header__city-dropdown">
+                <a href="#">Москва</a>
+                <a href="#">Воронеж</a>
+                <a href="#">Калининград</a>
+              </div>
+            </div>
             <li class="header__row">
               <div class="header__row-contact">+7 495 967 13 01</div>
             </li>
@@ -66,7 +77,7 @@
         </div>
       </div>
     </section>
-    <section class="info">
+    <section class="info" id="info">
       <div class="info__conteiner">
         <div class="info__conteiner-title">О страховании</div>
         <div class="info__conteiner-row">
@@ -142,74 +153,537 @@
           Условия которые мы предоставим Вам
         </div>
         <div class="conditions__conteiner-details">
-          <div class="conditions__details-image"></div>
+          <div class="conditions__details-image">
+            <img class="conditions__image" src="image/conditions-image1.png" />
+          </div>
           <div class="conditions__details-info">
-            <div class="conditions__info-title"></div>
-            <div class="conditions__info-text"></div>
+            <div class="conditions__info-title">20+</div>
+            <div class="conditions__info-text">
+              Высококвалифицированных врачей к которым вы можете обращаться 24/7
+            </div>
           </div>
         </div>
         <div class="conditions__conteiner-details">
           <div class="conditions__details-info">
-            <div class="conditions__info-title"></div>
-            <div class="conditions__info-text"></div>
+            <div class="conditions__info-title">BestDoctor</div>
+            <div class="conditions__info-text">
+              Доступ в один из лучших <br />медицинских сервисов в России
+            </div>
           </div>
-          <div class="conditions__details-image"></div>
+          <div class="conditions__details-image-center">
+            <img class="conditions__image" src="image/conditions-image2.png" />
+          </div>
         </div>
         <div class="conditions__conteiner-details">
-          <div class="conditions__details-image"></div>
+          <div class="conditions__details-image">
+            <img class="conditions__image" src="image/conditions-image3.png" />
+          </div>
           <div class="conditions__details-info">
-            <div class="conditions__info-title"></div>
-            <div class="conditions__info-text"></div>
+            <div class="conditions__info-title">600 000₽</div>
+            <div class="conditions__info-text">
+              Сумма страховой защиты от нещастного случая
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
       <div class="service__conteiner">
+        <div class="service__conteiner-title">У нас есть 2 пакета услуг</div>
         <div class="service__conteiner-row">
           <div class="service__row-table-one">
-            <div class="service__table-title-one"></div>
-            <div class="service__table-info-one"></div>
+            <div class="service__table-title-one">Что мы предлогаем:</div>
+            <div class="service__table-info-one">
+              &mdash; &nbsp;круглосуточный колл-центр по консультациям терапевта
+              или педиатра
+              <br />
+              <br />
+              &mdash;&nbsp;консультация терапевта или педиатра по телефону или
+              по видеосвязи
+              <br />
+              <br />
+              &mdash;&nbsp;предварительная запись к выбранному узкому
+              специалисту по телефону или через личный кабинет пациента
+              <br />
+              <br />
+              <br />
+              &mdash;&nbsp;консультация узкого специалиста по видеосвязи
+              <br />
+              <br />
+              <br />
+              &mdash;&nbsp;выбор лаборатории, запись на прием в лабораторию
+              <br />
+              <br />
+              <br />
+              &mdash;&nbsp;комплексный отчет о состоянии здоровья пациента от
+              врача после получения результатов анализов от пациента
+              <br />
+
+              <br />
+              <br />
+              &mdash;&nbsp;никаких чат-ботов
+              <br />
+              <br />
+              <br />
+              &mdash;&nbsp;на связи 24/7 только высококвалифицированные врачи
+              <br />
+              <br />
+              &mdash;&nbsp;удобное приложение с простым интерфейсом BestDoctor
+              <br />
+              <br />
+              &mdash;&nbsp;общие (клинические) анализы
+              <br />
+              <br />
+              &mdash;&nbsp;ультразвуковые исследования
+              <br />
+              <br />
+              &#9830;&nbsp;УЗИ органов брюшной полости
+              <br />
+              <br />
+              &#9830;&nbsp;почек
+              <br />
+              <br />
+              &#9830;&nbsp;мочевого пузыря
+              <br />
+              <br />
+              &#9830;&nbsp;УЗДГ сосудов (артерии и вены)
+
+              <br />
+              <br />&mdash;&nbsp;рентгенологические исследования
+            </div>
           </div>
           <div class="service__row-table">
-            <div class="service__table-title"></div>
-            <div class="service__table-info"></div>
+            <div class="service__table-title">
+              <b>Защита +</b> <br />виртуальная клиника
+            </div>
+            <div class="service__table-info">
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img class="service__info-line" src="image/service-line.png" />
+              <img class="service__info-line" src="image/service-line.png" />
+              <a>
+                <br />
+                <br />
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br
+              /></a>
+              <img class="service__info-line" src="image/service-line.png" />
+              <div class="service__info-price">10 500 руб.</div>
+              <button class="service__info-button">купить</button>
+            </div>
           </div>
           <div class="service__row-table">
-            <div class="service__table-title"></div>
-            <div class="service__table-info"></div>
+            <div class="service__table-title">
+              <b>Защита +</b> виртуальная клиника, лабораторные исследования
+            </div>
+            <div class="service__table-info">
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+              />
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+                style="margin-bottom: 5%"
+              />
+
+              <a>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              </a>
+              <img
+                class="service__info-vector"
+                src="image/service-vector.png"
+                style="margin-bottom: 2%"
+              />
+              <div
+                class="service__info-price"
+                style="color: red; font-size: 18px"
+              >
+                <br />
+                Супер цена <b>7 500 руб.</b>
+              </div>
+              <button class="service__info-button">купить</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="faq">
-      <div class="faq__conteiner">
-        <div class="faq__conteiner-title"></div>
-        <div class="faq__conteiner-row">
-          <div class="faq__row-question"></div>
-          <div class="faq__row-answer"></div>
+    <section class="insurance">
+      <div class="insurance__conteiner">
+        <div class="insurance__conteiner-title">
+          Что делать, если произошел страховой случай?
         </div>
-        <div class="faq__conteiner-row">
-          <div class="faq__row-question"></div>
-          <div class="faq__row-answer"></div>
+        <div class="insurance__conteiner-row">
+          <div class="insurance__row">
+            <div class="insurance__row-image">
+              <img class="insurance__image" src="image/insurance-1.png" />
+            </div>
+            <div class="insurance__row-text">Позвоните <br />нам</div>
+          </div>
+          <div class="insurance__row">
+            <div class="insurance__row-image">
+              <img class="insurance__image" src="image/insurance-2.png" />
+            </div>
+            <div class="insurance__row-text">Заполните <br />заявление</div>
+          </div>
+          <div class="insurance__row">
+            <div class="insurance__row-image">
+              <img class="insurance__image" src="image/insurance-3.png" />
+            </div>
+            <div class="insurance__row-text">
+              Узнайте статус решения вопроса
+            </div>
+          </div>
+          <div class="insurance__row">
+            <div class="insurance__row-image">
+              <img class="insurance__image" src="image/insurance-4.png" />
+            </div>
+            <div class="insurance__row-text">Полный архив всех условий</div>
+          </div>
         </div>
-        <div class="faq__conteiner-row">
-          <div class="faq__row-question"></div>
-          <div class="faq__row-answer"></div>
+      </div>
+    </section>
+    <section class="details" id="details">
+      <div class="details__conteiner">
+        <div class="details__conteiner-title">Уточнить детали</div>
+        <div class="details__conteiner-text">
+          Если вы не нашли ответа на свой вопрос, заполните<br />
+          эту форму, а мы как можно быстрее ответим вам.
         </div>
-        <div class="faq__conteiner-row">
-          <div class="faq__row-question"></div>
-          <div class="faq__row-answer"></div>
+        <div class="details__conteiner-form">
+          <div class="details__form">
+            <div class="details__form-name">ФИО</div>
+            <input
+              class="details__form-input"
+              type="text"
+              placeholder="Иванов Иван Иванович"
+            />
+            <div class="details__form-name">Номер телефона</div>
+            <input
+              class="details__form-input"
+              type="text"
+              placeholder="+7 999 999 99 99"
+            />
+            <div class="details__form-name">Еmail</div>
+            <input
+              class="details__form-input"
+              type="text"
+              placeholder="qwerty@mail.ru"
+            />
+            <div class="details__form-name">Регион</div>
+            <select class="details__form-input">
+              <option>Москва</option>
+              <option>Санкт-Петербург</option>
+              <option>Воронеж</option>
+              <option>Калининград</option>
+            </select>
+            <div class="details__form-button">
+              <button class="details__button-clear">Очистить</button>
+              <button class="details__button-next">Далее</button>
+            </div>
+          </div>
+          <div class="details__form-next">
+            <div class="details__form-name">
+              Наименование страхового продукта
+            </div>
+            <select class="details__form-input">
+              <option>Защита</option>
+              <option>Защита+</option>
+            </select>
+            <div class="details__form-name">Номер полиса</div>
+            <input
+              class="details__form-input"
+              type="text"
+              placeholder="123456"
+            />
+            <div class="details__form-name">Выберите тему</div>
+            <select class="details__form-input">
+              <option>Рассторжение страхового полиса</option>
+              <option>Несчастный случай</option>
+              <option>Потеря кормильца</option>
+              <option>ДТП</option>
+            </select>
+            <div class="details__form-name">Ваше сообщение</div>
+            <input
+              class="details__form-input"
+              type="text"
+              placeholder="Введите сообщение"
+              style="height: 15%"
+            />
+            <div class="details__form-button">
+              <button class="details__button-clear">Очистить</button>
+              <button class="details__button-next">Далее</button>
+            </div>
+          </div>
+          <div class="details__form-image">
+            <img class="details__image" src="image/details-image.png" />
+          </div>
         </div>
-        <div class="faq__conteiner-row">
-          <div class="faq__row-question"></div>
-          <div class="faq__row-answer"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__conteiner">
+        <div class="footer__conteiner-details">
+          <div class="footer__details-menu">
+            <ul class="footer__menu-row">
+              <li class="footer__row">Главная</li>
+              <li class="footer__row">О нас</li>
+              <li class="footer__row">Новости</li>
+              <li class="footer__row">Спецпредложение</li>
+              <li class="footer__row">Бизнес предложение</li>
+              <li class="footer__row">Твое будущее</li>
+              <li class="footer__row">Защита себя и близких</li>
+              <li class="footer__row">Защита сотрудников</li>
+            </ul>
+          </div>
+          <div class="footer__details-info">
+            <ul class="footer__info-row">
+              <li class="footer__row">Страховая документация</li>
+              <li class="footer__row">Финансовые показатели</li>
+              <li class="footer__row">Контакты</li>
+              <li id="map__footer" class="footer__row">Карта сайта</li>
+            </ul>
+          </div>
+          <div class="footer__details-adress">
+            <div class="footer__adress-direction">
+              125252, г. Москва, ул. Зорге, д. 22 А, офис 811
+            </div>
+            <div class="footer__adress-schedule">
+              График работы главного офиса 125252, г. Москва, ул. Зорге, д. 22
+              А, офис 811 Пн. - Чт. с 9:00 до 18:00 Пт. с 9:00 до 16:45 Сб-Вс
+              выходной
+            </div>
+            <button class="footer__adress-button">Как добраться</button>
+          </div>
+          <div class="footer__details-contact">
+            <div class="footer__contact-mail">
+              Адрес для почтовых отправлений: 125252, г. Москва, а/я 28
+            </div>
+            <div class="footer__contact-tel">тел.: +7 495 967 13 01</div>
+            <div class="footer__contact-emeil">
+              Email для связи с нами info@prolife.ru
+            </div>
+            <div class="footer__contact-social">
+              <img
+                class="footer__social-image"
+                src="image/footer-facebook.png"
+              />
+              <img
+                class="footer__social-image"
+                src="image/footer-instagramm.png"
+              />
+              <img
+                class="footer__social-image"
+                src="image/footer-telegramm.png"
+              />
+              <img class="footer__social-image" src="image/footer-vk.png" />
+            </div>
+          </div>
         </div>
-        <div class="faq__conteiner-row">
-          <div class="faq__row-question"></div>
-          <div class="faq__row-answer"></div>
+        <div class="footer__conteiner-line"></div>
+        <div class="footer__conteiner-authorship">
+          © 1998 – 2021 ООО СК "ДЕЛО ЖИЗНИ". Все права защищены. Полное или
+          частичное копирование любых материалов сайта запрещено. ООО СК «ДЕЛО
+          ЖИЗНИ» осуществляет свою деятельность на основании лицензий ЦБ РФ:СЖ №
+          3870 от 24.03.2017СЛ № 3870 от 24.03.2017 Органом, осуществляющим
+          полномочия по контролю и надзору за ООО СК «ДЕЛО ЖИЗНИ» является Банк
+          России. Адрес официального сайта Банк России - www.cbr.ru.
+        </div>
+      </div>
+    </footer>
+    <section class="personal">
+      <div class="personal__conteiner-background">
+        <div class="personal__conteiner">
+          <div class="personal__conteiner-title">
+            <div class="personal__title-title">Авторизация</div>
+            <img class="personal__title-exit" src="image/personal__cross.svg" />
+          </div>
+          <div class="personal__conteiner-info">
+            <div class="personal__info-input">
+              <div class="personal__input-title">Логин</div>
+              <input
+                class="personal__input-input"
+                type="text"
+                placeholder="Логин"
+              />
+            </div>
+            <div class="personal__info-input">
+              <div class="personal__input-title">Пароль</div>
+              <input
+                class="personal__input-input"
+                type="text"
+                placeholder="Пароль"
+              />
+            </div>
+          </div>
+          <button class="personal__conteiner-authorization">
+            Авторизоваться
+          </button>
+          <div class="personal__conteiner-forgot">Забыли пароль?</div>
+        </div>
+      </div>
+    </section>
+    <section class="registration">
+      <div class="registration__conteiner-background">
+        <div class="registration__conteiner">
+          <div class="registration__conteiner-title">
+            <div class="registration__title-title">Регистрация</div>
+            <img
+              class="registration__title-exit"
+              src="image/register__cross.svg"
+            />
+          </div>
+          <div class="registration__conteiner-info">
+            <div class="registration__info-input">
+              <div class="registration__input-title">Введите логин</div>
+              <input
+                class="registration__input-input"
+                type="text"
+                placeholder="Логин"
+              />
+            </div>
+            <div class="registration__info-input">
+              <div class="registration__input-title">Введите пароль</div>
+              <input
+                class="registration__input-input"
+                type="text"
+                placeholder="Пароль"
+              />
+            </div>
+            <div class="registration__info-input">
+              <div class="registration__input-title">Введите Фамилию</div>
+              <input
+                class="registration__input-input"
+                type="text"
+                placeholder="Иванов"
+              />
+            </div>
+            <div class="registration__info-input">
+              <div class="registration__input-title">Введите Имя</div>
+              <input
+                class="registration__input-input"
+                type="text"
+                placeholder="Иван"
+              />
+            </div>
+            <div class="registration__info-input">
+              <div class="registration__input-title">
+                Введите номер телефона
+              </div>
+              <input
+                class="registration__input-input"
+                type="text"
+                placeholder="+ 7 999 999 99 99"
+              />
+            </div>
+          </div>
+          <button class="registration__conteiner-authorization">
+            Зарегистрироваться
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__conteiner-background">
+        <div class="map__conteiner">
+          <div class="map__conteiner-title">
+            <div class="map__title-title">Регистрация</div>
+            <img class="map__title-exit" src="image/map__cross.svg" />
+          </div>
+          <div class="map__conteiner-image">
+            <img class="map__image" src="image/photo1684927274.jpeg" />
+          </div>
         </div>
       </div>
     </section>
   </body>
+  <script src="js/personal.js?v=1"></script>
+  <script src="js/form.js?v=1"></script>
 </html>
