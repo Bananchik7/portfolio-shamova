@@ -428,7 +428,18 @@ footer {
   margin-top: 7%;
   font-style: italic;
 }
-.footer__menu-row li:hover {
+.footer__menu-row a {
+  list-style-type: none;
+  font-family: "SF Pro Display";
+  font-size: 19px;
+  letter-spacing: 0.9px;
+  margin-top: 7%;
+  font-style: italic;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__menu-row a:hover {
   color: #ddd0a4;
   cursor: pointer;
   text-decoration: underline;
